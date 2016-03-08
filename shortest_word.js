@@ -1,6 +1,5 @@
-module.exports = function() {
+module.exports = function(sentence) {
 
-  var sentence = "How come you are learning so many things";
   var words = sentence.split(' ');
 
   var wordMap = words.map(function(w) {
@@ -9,6 +8,7 @@ module.exports = function() {
       length: w.length
     }
   })
+
   var result = wordMap.reduce(function(a, b) {
     return a.word.length < b.word.length ? a : b;
   });
