@@ -3,7 +3,6 @@ module.exports = function(sentence) {
   var words = sentence.split(' ');
   var wordLengths = [];
 
-
   words.forEach (function(word){
     wordLengths.push(word.length);
   })
