@@ -6,6 +6,6 @@ module.exports = function(stringList) {
     string += (stringList[i] + "\n");
   }
 
-  return (string);
+  return string;
 
 }

@@ -1,12 +1,12 @@
-module.exports = function(char, l, w) {
+module.exports = function(char, base) {
 
   var draw = require("./draw");
 
   var stringList = [];
   var str = " ";
 
-  for (j = 0; j < l; j++) {
-    for (i = 0; i < w; i++) {
+  for (j = 0; j < base; j++) {
+    for (i = 0; i < base; i++) {
       str += (" " + char);
     }
     str += "\n ";
@@ -16,4 +16,4 @@ module.exports = function(char, l, w) {
 
   return draw(stringList);
 
-};
+}

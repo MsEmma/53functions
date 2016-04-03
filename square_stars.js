@@ -1,14 +1,9 @@
 module.exports = function() {
 
-  var string = " ";
-  var stringList = ["*", "*", "*", "*"];
+  var draw = require("./draw");
 
-  for (j = 0; j < 4; j++) {
-    for (i = 0; i < stringList.length; i++) {
-      string += (" " + stringList[i]);
-    }
-    string += "\n ";
-  }
+  var stringList = ["  * * * *", "  * * * *", "  * * * *", "  * * * *"];
 
-  return string;
+  return draw(stringList);
+
 };
