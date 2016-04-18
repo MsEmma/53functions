@@ -1,4 +1,4 @@
-module.exports = function(n) {
+module.exports = function() {
   // rock = "*", paper = "#", scissors = "x"
 
   var turn = function generateTurn(min, max) {
@@ -38,7 +38,11 @@ module.exports = function(n) {
       outcome = {result: result,winner: 'Player1',status: 'busy'};
       return outcome;
     }
+  }
 
+  var done = function(){
+    outcome.status = "done";
+    return outcome;
   }
 
   var score = function() {
@@ -67,10 +71,17 @@ module.exports = function(n) {
   }
 
   this.play = function() {
-    play(result);
+    play();
     console.log(outcome);
     return this;
   }
+
+  this.done = function(){
+    done();
+    console.log(outcome);
+    return this
+  }
+
   this.score = function() {
     score();
     console.log(scoreboard);
@@ -82,5 +93,4 @@ module.exports = function(n) {
     console.log(scoreboard);
     return this
   }
-
 }
