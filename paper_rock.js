@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function(n) {
   // rock = "*", paper = "#", scissors = "x"
 
   var turn = function generateTurn(min, max) {
