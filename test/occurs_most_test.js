@@ -1,5 +1,5 @@
 var assert = require("assert");
-var occurs_most = require("../occurs_most")
+var occurs_most = require("../occurs_most");
 
 describe("occurs_most", function() {
 

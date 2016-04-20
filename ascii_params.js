@@ -1,10 +1,10 @@
-module.exports = function(str) {
+module.exports = function(word) {
 
   var asciiSum = 0;
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < word.length; i++) {
 
-    asciiSum += str.charCodeAt(i);
+    asciiSum += word.charCodeAt(i);
   }
 
   return asciiSum;

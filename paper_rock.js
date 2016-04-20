@@ -35,7 +35,7 @@ module.exports = function(n) {
       outcome = { result: result,winner: 'Player2',status: 'busy'};
       return outcome;
     } else if (result === '# - *') {
-      outcome = {result: result,winner: 'Player1',status: 'busy'};
+      outcome = {result: result, winner: 'Player1',status: 'busy'};
       return outcome;
     }
   }

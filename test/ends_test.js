@@ -1,5 +1,5 @@
 var assert = require("assert");
-var ends = require("../ends")
+var ends = require("../ends");
 
 describe("ends", function() {
 

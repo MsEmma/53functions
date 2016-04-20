@@ -1,5 +1,5 @@
 var assert = require('assert');
-var fibonacci = require('../fibonacci')
+var fibonacci = require('../fibonacci');
 
 describe('fibonacci', function() {
   it('should take a number as a parameter, and return the fibonacci sequence less than it', function() {

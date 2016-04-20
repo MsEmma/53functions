@@ -1,5 +1,5 @@
 var assert = require("assert");
-var start = require("../start")
+var start = require("../start");
 
 describe("start", function() {
 
