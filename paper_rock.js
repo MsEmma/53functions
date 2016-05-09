@@ -9,7 +9,8 @@ module.exports = function(n) {
   }
 
   var choices = {1: '*',2: '#',3: 'x'};
-  var Player1 = turn(), Player2 = turn();
+  var Player1 = turn(),
+      Player2 = turn();
 
   result = choices[Player1] + " - " + choices[Player2];
 
@@ -42,7 +43,6 @@ module.exports = function(n) {
     }
   };
 
-
   var score = function() {
     if(outcome.status === 'busy'){
       if (outcome.winner === 'Player1') {
@@ -66,7 +66,6 @@ module.exports = function(n) {
       }
     }
   };
-
 
   this.play = function(result) {
     this.outcome = play(result);
